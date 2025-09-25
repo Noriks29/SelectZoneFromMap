@@ -184,6 +184,21 @@ export default {
 <style lang="scss">
 #map{
     height: 100vh;
+      .leaflet-map-pane{
+            pointer-events: none;
+        }
+  .leaflet-bottom {
+    &.leaflet-right{
+      display: none;
+    }
+  }
+  .leaflet-attribution-flag{
+    width: 0 !important;
+  }
+  
+}
+.leaflet-bottom{
+    display: none !important;
 }
 .MapContain{
     flex: 1;
@@ -191,4 +206,5 @@ export default {
 .MainPage{
   display: flex;
 }
+
 </style>
